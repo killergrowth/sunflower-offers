@@ -476,8 +476,8 @@ h1, h2, h3, h4, h5 {
 }
 .billing-toggle .save {
   display: inline-block;
-  background: var(--yellow);
-  color: var(--black);
+  background: var(--black);
+  color: var(--white);
   padding: 2px 8px;
   margin-left: 6px;
   font-size: 11px;
@@ -507,6 +507,14 @@ h1, h2, h3, h4, h5 {
   border: none;
   transform: translateY(-12px);
   box-shadow: var(--shadow);
+  padding-top: 0;
+  overflow: hidden;
+}
+.plan-icon-section {
+  background: #ffffff;
+  padding: 28px 28px 24px;
+  margin-bottom: 24px;
+  position: relative;
 }
 .plan--featured:hover { transform: translateY(-18px); }
 .plan--featured h3, .plan--featured .price-amount { color: var(--white); }
@@ -516,8 +524,8 @@ h1, h2, h3, h4, h5 {
   position: absolute;
   top: -12px;
   left: 36px;
-  background: var(--yellow);
-  color: var(--black);
+  background: var(--black);
+  color: var(--white);
   padding: 6px 14px;
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
@@ -531,10 +539,9 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 18px;
 }
 .tier-icon {
-  width: 88px;
-  height: 88px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
-  border-radius: 12px;
   mix-blend-mode: lighten;
 }
 .plan h3 {
@@ -697,8 +704,8 @@ h1, h2, h3, h4, h5 {
 .step { text-align: center; position: relative; z-index: 1; }
 .step-num {
   width: 100px; height: 100px;
-  background: var(--yellow);
-  color: var(--black);
+  background: var(--black);
+  color: var(--white);
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
