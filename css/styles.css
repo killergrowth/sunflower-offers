@@ -88,13 +88,16 @@ h1, h2, h3, h4, h5 {
   justify-content: center;
   margin-left: 16px;
   flex-shrink: 0;
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease;
 }
 .btn:hover { background: var(--black); }
 .btn-sf-icon {
-  width: 36px;
-  height: 36px;
+  width: 63px;
+  height: 63px;
   object-fit: contain;
 }
+.btn:hover .btn-icon { transform: rotate(0deg); }
 .btn:hover .btn-sf-icon { filter: invert(1); }
 
 .btn--white {
@@ -108,6 +111,8 @@ h1, h2, h3, h4, h5 {
   justify-content: center;
   margin-left: 16px;
   flex-shrink: 0;
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease;
 }
 
 .btn--outline {
@@ -1028,7 +1033,8 @@ h1, h2, h3, h4, h5 {
 }
 .footer-social { display: flex; gap: 14px; }
 .footer-social a {
-  width: 36px; height: 36px;
+  width: 63px;
+  height: 63px;
   background: rgba(255,255,255,0.05);
   display: inline-flex;
   align-items: center;
