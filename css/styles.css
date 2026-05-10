@@ -1032,6 +1032,17 @@ h1, h2, h3, h4, h5 {
   gap: 16px;
   font-size: 13px;
 }
+.footer-bottom-contact {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  color: rgba(255,255,255,0.6);
+  font-size: 13px;
+  flex: 1;
+  justify-content: center;
+}
+.footer-bottom-contact i { color: var(--yellow); margin-right: 6px; }
 .footer-social { display: flex; gap: 14px; }
 .footer-social a {
   width: 63px;
