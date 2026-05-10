@@ -539,8 +539,8 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 18px;
 }
 .tier-icon {
-  width: 22px;
-  height: 22px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
   mix-blend-mode: lighten;
 }
