@@ -527,10 +527,15 @@ h1, h2, h3, h4, h5 {
 }
 
 .tier-marker {
-  display: inline-flex;
-  gap: 4px;
+  display: flex;
   margin-bottom: 18px;
-  font-size: 18px;
+}
+.tier-icon {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  border-radius: 12px;
+  mix-blend-mode: lighten;
 }
 .plan h3 {
   font-size: 28px;
