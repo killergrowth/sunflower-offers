@@ -229,18 +229,22 @@ h1, h2, h3, h4, h5 {
 /* =============== HERO =============== */
 .hero {
   position: relative;
-  background: var(--yellow);
+  background: url('/images/hero-full.jpg') center/cover no-repeat;
+  min-height: 640px;
   overflow: hidden;
   isolation: isolate;
 }
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.05fr 1fr;
-  align-items: stretch;
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   min-height: 640px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  gap: 40px;
 }
 .hero-content {
-  padding: 100px 80px 100px 60px;
+  max-width: 520px;
   position: relative;
   z-index: 2;
 }
@@ -287,24 +291,9 @@ h1, h2, h3, h4, h5 {
 }
 .hero-phone i { color: var(--white); background: var(--black); width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; }
 
-.hero-image {
-  position: relative;
-  background: #2a2a2a;
-  background-size: cover;
-  background-position: center;
-  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
-}
-.hero-image::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(252,175,24,0.15) 0%, transparent 40%);
-}
-
 .price-badge {
-  position: absolute;
-  bottom: 60px;
-  right: 60px;
+  position: relative;
+  flex-shrink: 0;
   width: 200px;
   height: 200px;
   background: var(--black);
@@ -320,6 +309,8 @@ h1, h2, h3, h4, h5 {
   border: 4px dashed var(--white);
   box-shadow: var(--shadow);
   transform: rotate(-6deg);
+  align-self: flex-end;
+  margin-bottom: 40px;
 }
 .price-badge .label {
   font-size: 12px;
@@ -339,7 +330,6 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   margin-top: 4px;
 }
-
 /* =============== BENEFITS STRIP =============== */
 .benefits {
   background: var(--bg-cream);
@@ -1033,15 +1023,12 @@ h1, h2, h3, h4, h5 {
 
 /* =============== RESPONSIVE =============== */
 @media (max-width: 1300px) {
-  .hero-grid { grid-template-columns: 0.9fr 1.1fr; }
-  .hero-image { clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%); }
   .hero-content { padding: 80px 40px 80px 60px; }
 }
 @media (max-width: 1100px) {
-  .hero-grid { grid-template-columns: 1fr; }
-  .hero-content { padding: 70px 32px; }
-  .hero-image { min-height: 400px; clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%); }
-  .price-badge { width: 160px; height: 160px; bottom: 30px; right: 30px; }
+  .hero-inner { flex-direction: column; align-items: flex-start; padding: 60px 32px; gap: 24px; }
+  .hero { background-position: 30% center; }
+  .price-badge { width: 160px; height: 160px; margin-bottom: 0; align-self: flex-start; }
   .price-badge .amount { font-size: 44px; }
   .benefits-grid { grid-template-columns: repeat(2, 1fr); }
   .stats-grid { grid-template-columns: 1fr; max-width: 500px; }
@@ -1067,6 +1054,7 @@ h1, h2, h3, h4, h5 {
   .logo img { height: 48px; }
   .book-online { padding: 14px 18px; font-size: 12px; }
   .book-online span { display: none; }
+  .hero { background-position: 30% center; }
   .hero-content { padding: 50px 20px; }
   .hero h1 { font-size: 44px; }
   .hero-tagline { font-size: 24px; }
