@@ -535,7 +535,6 @@ h1, h2, h3, h4, h5 {
   height: 88px;
   object-fit: contain;
   border-radius: 12px;
-  mix-blend-mode: lighten;
 }
 .plan h3 {
   font-size: 28px;
