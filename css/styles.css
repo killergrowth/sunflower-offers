@@ -315,9 +315,10 @@ h1, h2, h3, h4, h5 {
 .hero-phone i { color: var(--white); background: var(--black); width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; }
 
 .price-badge {
-  position: absolute;
-  right: 60px;
-  bottom: 60px;
+  position: relative;
+  flex-shrink: 0;
+  align-self: flex-end;
+  margin-bottom: 40px;
   width: 200px;
   height: 200px;
   background: var(--black);
@@ -334,6 +335,7 @@ h1, h2, h3, h4, h5 {
   box-shadow: var(--shadow);
   transform: rotate(-6deg);
 }
+.price-badge--mobile { display: none; }
 .price-badge .label {
   font-size: 12px;
   letter-spacing: 2px;
@@ -1063,9 +1065,10 @@ h1, h2, h3, h4, h5 {
   .hero-inner { flex-direction: column; align-items: flex-start; padding: 60px 32px; gap: 24px; }
   .hero { background-position: 30% center; }
   .price-badge {
-  position: absolute;
-  right: 60px;
-  bottom: 60px;
+  position: relative;
+  flex-shrink: 0;
+  align-self: flex-end;
+  margin-bottom: 40px;
   width: 200px;
   height: 200px;
   background: var(--black);
@@ -1114,7 +1117,9 @@ h1, h2, h3, h4, h5 {
   .hero h1 { font-size: 38px; }
   .hero-inner { padding-top: 32px; padding-bottom: 32px; }
   .hero-tagline { font-size: 20px; }
-  .price-badge {
+  .price-badge--desktop { display: none; }
+  .price-badge--mobile {
+    display: flex;
     position: static;
     width: 120px;
     height: 120px;
@@ -1122,7 +1127,8 @@ h1, h2, h3, h4, h5 {
     transform: rotate(-6deg);
     flex-shrink: 0;
   }
-  .price-badge .label { font-size: 10px; }
+  .price-badge--mobile { display: none; }
+.price-badge .label { font-size: 10px; }
   .price-badge .amount { font-size: 36px; }
   .price-badge .per { font-size: 11px; }
   .hero h1 { font-size: 44px; }
