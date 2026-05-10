@@ -526,15 +526,23 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
 }
 
-.tier-marker {
-  display: flex;
-  margin-bottom: 18px;
-}
 .tier-icon {
   width: 88px;
   height: 88px;
   object-fit: contain;
   border-radius: 12px;
+}
+.plan-title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.tier-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 .plan h3 {
   font-size: 28px;
