@@ -1,6 +1,0 @@
-# robots.txt — Pre-launch. Do not index.
-
-User-agent: *
-Disallow: /
-
-Sitemap: https://offers.sunflowerplumbing.com/sitemap.xml

@@ -1,4 +1,8 @@
 // KillerGrowth -- pages.dev crawler block
+// For *.pages.dev: block all crawlers
+// For live domain: pass through to the static robots.txt asset
+// Do NOT embed robots.txt content in the worker -- encoding issues with special chars
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
