@@ -164,7 +164,6 @@ h1, h2, h3, h4, h5 {
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 18px 32px;
   max-width: 1480px;
   margin: 0 auto;
@@ -529,7 +528,6 @@ h1, h2, h3, h4, h5 {
 .plan-title-with-icon {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 6px;
   margin-bottom: 8px;
   text-align: left;
@@ -604,7 +602,7 @@ h1, h2, h3, h4, h5 {
   flex-shrink: 0;
 }
 
-.plan .btn { align-self: flex-start; width: 100%; justify-content: space-between; padding-left: 28px; }
+.plan .btn { align-self: flex-start; width: 100%; padding-left: 28px; }
 
 /* =============== SEPTIC ADD-ON =============== */
 .addon {
@@ -806,7 +804,6 @@ h1, h2, h3, h4, h5 {
   padding: 28px 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   cursor: pointer;
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
@@ -956,7 +953,7 @@ h1, h2, h3, h4, h5 {
   border-color: var(--yellow);
   background: var(--white);
 }
-.enroll-form .btn { width: 100%; justify-content: space-between; margin-top: 8px; }
+.enroll-form .btn { width: 100%; margin-top: 8px; }
 .form-note {
   font-size: 12px;
   color: var(--subtle);
@@ -973,7 +970,6 @@ h1, h2, h3, h4, h5 {
 .footer-cta-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 40px;
   flex-wrap: wrap;
 }
@@ -1019,7 +1015,6 @@ h1, h2, h3, h4, h5 {
   padding-top: 30px;
   border-top: 1px solid rgba(255,255,255,0.1);
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 16px;
